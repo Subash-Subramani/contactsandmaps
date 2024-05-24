@@ -1,0 +1,86 @@
+/* src/contact.css */
+.contact-container {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.create-button {
+    margin-bottom: 20px;
+}
+
+.contact-list {
+    width: 90%;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.list-content {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 5px;
+    background: #f9f9f9;
+    border-radius: 13px;
+}
+
+.list-text {
+    font-size: 18px;
+    margin: 0;
+}
+
+.list-actions {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.modal-title .ant-modal-header {
+    width: 100%;
+    text-align: center;
+}
+
+.modal-title .ant-modal-content {
+    width: 100%;
+    text-align: center;
+}
+
+.modal-space .ant-space-item {
+    width: 100%;
+    text-align: center;
+}
+
+.modal-radio .ant-space-item {
+    padding-left: 20px;
+    text-align: start;
+}
+.editbutton{
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-list {
+        width: 100%;
+    }
+    .list-item {
+        flex-direction: column;
+    }
+    .list-text {
+        font-size: 15px;
+    }
+    .list-actions {
+        justify-content: flex-start;
+        gap: 10px;
+    }
+}
